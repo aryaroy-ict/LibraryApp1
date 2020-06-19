@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="nav navbar-default">
+        <ul class="nav navbar-nav">
+            <li> <a href="/">HOME</a></li>
+            <%for(i=0;i<nav.length;i++){%>
+            <li> 
+                <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+            </li>
+            <%}%>
+           
+          <!--- <li class="listyle"> <a href="login.html">LogIn</a></li>
+            <li class="listyle1"> <a href="signup.html">SignUp</a></li>-->
+        </ul>
+    </nav>
+  <!--- <nav class="nav navbar-default">
+        <ul class="nav navbar-nav">
+            <li> <a href="1.html">HOME</a></li>
+            <li> <a href="#">CATEGORY</a></li>
+            <li> <a href="#">CATEGORY</a></li>
+            <li> <a href="#">CATEGORY</a></li>
+            <li class="listyle"> <a href="login.html">LogIn</a></li>
+            <li class="listyle1"> <a href="signup.html">SignUp</a></li>
+        </ul>
+    </nav>-->
+    <div class="bg-img">
+       
+        <h1 class="h1style">Welcome To Gurukulam</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <p></p>
+            </div>
+            <div class="col-md-4" id="grad1">
+               <h2 class="subh">Member Login</h2>
+               <div class="col-md-12">
+                    <form class="fstyle" onsubmit="return login();">
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="check1" id="error"></label><br>
+                        <label for="pwd">Password:</label><br>
+                        <input type="password" id="pwd" name="lname" required><br>
+                        <label for="check2" id="error1"></label><br>
+                        <button type="submit" id="mybtn" class="btn btn-default">Submit</button><br><br>
+                        <a href="signup.html" class="astyle" target="_blank">Register</a><br><br>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="">
+                <p class="pstyle">"One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time."</p>
+                
+                <p></p>
+            </div>
+            <div class="col-md-4">
+                <img src="">
+                <p class="pstyle">"A room without a book is a body without its soul"</p>
+                
+                <p></p>
+            </div>
+            <div class="col-md-4">
+                <img src="">
+                <p class="pstyle">"Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten."</p>
+                <p></p>
+            </div>
+        </div>
+               
+                
+                
+            
+
+    </div>
+    <div class="container">
+        <h1>Follow Us</h1>
+        
+            <button type="button" class="btn btn-info">Twitter</button>
+            <button type="button" class="btn btn-primary">Facebook</button>
+            <button type="button" class="btn btn-danger">Google+</button>
+       
+    </div>
+    <script src="/js/login.js"></script>
+
+    
+</body>
+</html>

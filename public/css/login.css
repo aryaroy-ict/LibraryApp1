@@ -1,0 +1,52 @@
+.bg-img{
+   background-color: rgb(216, 198, 198) ; 
+  /*  background-image: url("li9.jpeg");
+    background-repeat: no-repeat;*/
+  
+   
+}
+.navbar-default{
+    width:100%; 
+    background-color: rgb(6, 6, 192);
+}
+.navbar-default .navbar-nav li a{
+    color:whitesmoke;
+    background-color:rgb(6, 6, 192);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+} 
+.listyle
+{
+    color:white;
+    font-size:15px;
+    padding-left: 800px;
+}
+.h1style{
+    text-align: center;
+    color:black;
+    margin-top:0px;
+    padding-top:30px;
+}
+/*.fstyle{
+    margin-left:550px;
+    margin-top:100px;
+}*/
+.pstyle{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: black;
+    text-align: center;
+}
+#grad1{
+    
+    background-image: linear-gradient(to right, rgb(41, 75, 230) , rgb(44, 93, 230));
+    border-radius: 2%;
+    margin-top:30px;
+}
+.subh{
+    text-align: center;
+}
+.astyle{
+    color:white;
+}

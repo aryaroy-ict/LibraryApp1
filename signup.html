@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/signup.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="nav navbar-default">
+        <ul class="nav navbar-nav">
+            <li> <a href="#">HOME</a></li>
+            <li> <a href="#">CATEGORY</a></li>
+            <li> <a href="#">CATEGORY</a></li>
+            <li> <a href="#">CATEGORY</a></li>
+            <li class="listyle"> <a href="login.html">LogIn</a></li>
+            <li class="listyle1"> <a href="signup.html">SignUp</a></li>
+        </ul>
+    </nav>
+    <div class="bg-img">
+        <h1 class="h1style">Join Gurukulam to Enlightened your inner Knowledge</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <p></p>
+            </div>
+            <div class="col-md-4" id="grad2">
+                <h2>Registration Portal</h2>
+                <form class="fstyle" action="signup.html" onsubmit="return !!(myname()& mypass()& myphone()& myadd())" onclick="return myreset();">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="check1" id="check1"></label><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="check2" id="check2"></label><br>
+                    <label for="username"> UserName:</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="check3" id="check3"></label><br>
+                    <label for="password"> Password:</label><br>
+                    <input type="password"  id="pass"  name="password" required> <br>
+                    <label for="check4" id="check4"></label><br>
+                    <label for="password"> Confirm Password:</label><br>
+                    <input type="password"  id="cpass" name="Confirm password" required> <br>
+                    <label for="check5" id="check5"></label><br>
+                    <label for="number"> PhoneNumber:</label><br>
+                    <input type="text"  id="phoneno" name="Phonenumber" required> <br>
+                    <label for="check6" id="check6"></label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br><br>
+                    <label for="address">Address for Communication:</label><br><br>
+                    <textarea rows="4" cols="50" id="add1" name="comment" form="usrform" placeholder="Enter the Address for communication" required></textarea><br>
+                    <label for="check7" id="check7"></label><br>
+                    <button type="submit" id="mybtn1" class="btn btn-info">Submit</button>
+                    <button type="reset" id="mybtn2" class="btn btn-warning">Reset</button><br><br>
+
+
+                </form>
+            
+            </div>
+            <div class="col-md-4">
+                <p></p>
+            </div>
+        </div>
+        
+    </div>
+    
+   <div class="container">
+        <h1>Follow Us</h1>
+        
+            <button type="button" class="btn btn-info">Twitter</button>
+            <button type="button" class="btn btn-primary">Facebook</button>
+            <button type="button" class="btn btn-danger">Google+</button>
+       
+    </div>
+    <script src="signup.js"></script>
+    
+</body>
+</html>

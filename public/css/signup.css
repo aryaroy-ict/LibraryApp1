@@ -1,0 +1,39 @@
+.navbar-default{
+    width:100%; 
+    background-color: rgb(6, 6, 192);
+}
+.navbar-default .navbar-nav li a{
+    color:whitesmoke;
+    background-color:rgb(6, 6, 192);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+} 
+.listyle
+{
+    color:white;
+    font-size:15px;
+    padding-left: 800px;
+}
+.bg-img{
+    background-image: url("li2.jpg");
+   background-repeat: no-repeat;
+    max-width: 100%;
+   
+}
+.h1style{
+    text-align: center;
+    color:black;
+    margin-top:0px;
+    padding-top:10px;
+}
+.fstyle{
+    margin-left:50px;
+    color:black;
+}
+button.btn-default{
+    margin-left:10px;
+
+}
+#grad2{
+    background-image:linear-gradient(to right,rgb(127, 127, 199) , rgb(57, 57, 238));
+}

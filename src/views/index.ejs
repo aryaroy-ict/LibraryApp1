@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%=title%></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="nav navbar-default">
+        <ul class="nav navbar-nav">
+            <li> <a href="/">HOME</a></li>
+            <%for(i=0;i<nav.length;i++){%>
+            <li> 
+                <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+            </li>
+            <%}%>
+           
+          <!--- <li class="listyle"> <a href="login.html">LogIn</a></li>
+            <li class="listyle1"> <a href="signup.html">SignUp</a></li>-->
+        </ul>
+    </nav>
+    <div class="container-fluid">
+            <p class="pstyle"><%=title%></p>
+        </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+
+    </div>
+    <div class="jumbotron">
+        <p>Repurpose Content to Reach a Wider Audience</p>
+        <button type="button" class="btn">97th.com</button>
+        <img src="1.jpg" class="img-circle" alt="logo">
+        <ul>
+            <li>Last week </li>
+            <a href="#" class="style1">Read more</a></li>
+        </ul>
+        <hr class="solid">
+    </div>
+    <div class="jumbotron">
+        <p>14 Usefull Site For Designers</p>
+        <button type="button" class="btn">devg.com</button>
+        <img src="./2.jpg" class="img-circle" alt="logo">
+        <ul>
+            <li>Last week </li>
+            <a href="#" class="style1">Read more</a></li>
+        </ul>
+        <hr class="solid">
+    </div>
+    <div class="jumbotron">
+        <p>TrendPaper - What's Trending in the World</p>
+        <button type="button" class="btn">betail.st</button>
+        <img src="1.jpg" class="img-circle" alt="logo">
+        <ul>
+            <li>Last week </li>
+            <a href="#" class="style1">Read more</a></li>
+        </ul>
+        <hr class="solid">
+        <button type="button"class="bstyle">More</button>  
+            
+        </div>
+        
+
+       
+        
+
+    </div>
+    <div class="container">
+        <h1>Follow Us</h1>
+        
+            <button type="button" class="btn btn-info">More</button>
+            <button type="button" class="btn btn-primary">Facebook</button>
+            <button type="button" class="btn btn-danger">Google+</button>
+       
+    </div>
+</body>
+</html>
