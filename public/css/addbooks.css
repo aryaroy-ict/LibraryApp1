@@ -30,7 +30,7 @@ font-weight: bold;
 } 
 .listyle
 {
-color:white;
+color:black;
 font-size:15px;
 padding-left: 800px;
 }
@@ -52,6 +52,11 @@ margin-bottom:-59px;
 margin-left:22px;
 margin-right:20px;
 background-color: rgb(248, 246, 246);
+
+}
+.formstyle1{
+    color:black;
+
 }
 .jumbotron p{
 margin-bottom:44px;

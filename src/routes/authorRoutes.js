@@ -1,6 +1,7 @@
 const express = require('express');
 const authorsRouter = express.Router();
-function field(nav)
+const Authordata = require('../model/Authordata');
+function router(nav)
 {
     var authors = [
         {
@@ -18,24 +19,30 @@ function field(nav)
     ]
     
     authorsRouter.get('/',function(req,res){
-        res.render("authors",
-        {
-           nav,
-            title:'Library',
-            authors
+        Authordata.find()
+        .then(function(authors){
+            res.render("authors",{
+                nav,
+                title:'Library',
+                authors
             
     
-        });
+             });
+        })
+        
     }); 
     
-    authorsRouter.get('/:i',function(req,res){
-        const i = req.params.i
+    authorsRouter.get('/:id',function(req,res){
+       const id = req.params.id
+       Authordata.findOne({_id: id})
+      .then(function(author){
         res.render("author",
         {
             nav,
             title:'Library',
-            author: authors[i]
+            author
         });
+    });
     });
     
     return authorsRouter;
@@ -43,4 +50,4 @@ function field(nav)
 
 
 
-module.exports = field;
+module.exports = router;
